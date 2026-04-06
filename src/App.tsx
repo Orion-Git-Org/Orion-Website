@@ -5,7 +5,7 @@ import Team from './pages/Team';
 import Documentation from './pages/Documentation';
 import Contact from './pages/Contact';
 
-const basename = import.meta.env.BASE_URL;
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export default function App() {
   return (
