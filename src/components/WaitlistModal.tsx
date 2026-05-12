@@ -33,11 +33,8 @@ export default function WaitlistModal() {
       const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
       
       if (!accessKey) {
-        console.warn("Web3Forms Access Key is missing. Simulating success for development.");
-        // Simulate network delay for development if key is missing
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        setModalStep(2);
-        setIsSubmitting(false);
+        console.error("Web3Forms Access Key is missing. Set VITE_WEB3FORMS_ACCESS_KEY before building.");
+        setError('Signup service is not configured yet. Please try again later.');
         return;
       }
 
