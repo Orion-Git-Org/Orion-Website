@@ -3,7 +3,7 @@ import { useState, FormEvent } from 'react';
 import { useWaitlist } from '../context/WaitlistContext';
 
 export default function WaitlistModal() {
-  const { isModalOpen, closeModal } = useWaitlist();
+  const { isModalOpen, closeModal, web3FormsAccessKey } = useWaitlist();
   const [modalStep, setModalStep] = useState(1);
   const [email, setEmail] = useState('');
   const [github, setGithub] = useState('');
@@ -30,7 +30,7 @@ export default function WaitlistModal() {
 
     try {
       // We use Web3Forms to send emails directly from a static site without a backend.
-      const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+      const accessKey = web3FormsAccessKey.trim();
       
       if (!accessKey) {
         console.error("Web3Forms Access Key is missing. Set VITE_WEB3FORMS_ACCESS_KEY before building.");
