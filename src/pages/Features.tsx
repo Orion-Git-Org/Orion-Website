@@ -56,9 +56,9 @@ export default function Features() {
       {/* Waitlist CTA Section */}
       <section className="py-24 px-8 md:px-16 bg-surface-container-lowest border-y border-white/5">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">Scale Your Process Orchestration</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-6">Automate your workflows</h2>
           <p className="text-secondary text-lg mb-10 max-w-2xl mx-auto">
-            Join the 100+ devs at AAAs & freelancers who have already experienced our preview. Limited capacity for the next deployment cycle.
+            Join Orion's growing list of design partners to experience your workflows being automated reliably.
           </p>
           <button onClick={openModal} className="inline-block kinetic-gradient text-on-primary px-10 py-4 rounded-lg font-bold tracking-widest text-sm hover:scale-105 transition-transform">
             JOIN THE WAITLIST
