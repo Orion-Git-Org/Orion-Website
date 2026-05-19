@@ -94,9 +94,9 @@ export default function WaitlistModal() {
             </div>
 
             <div className="mb-8">
-              <h2 className="text-3xl font-bold tracking-tighter text-white mb-4">Join the Observatory.</h2>
+              <h2 className="text-3xl font-bold tracking-tighter text-white mb-4">Join the Waitlist</h2>
               <p className="text-secondary text-sm leading-relaxed">
-                Secure your place for early access to the next generation of precision development tools.
+                Join our growing list of design partners
               </p>
             </div>
 
@@ -139,10 +139,6 @@ export default function WaitlistModal() {
                 {isSubmitting ? 'Signing Up...' : 'Sign Up'} 
                 {!isSubmitting && <span className="material-symbols-outlined text-sm">arrow_forward</span>}
               </button>
-
-              <p className="text-center text-xs font-label tracking-widest text-secondary uppercase mt-6">
-                Join 100+ Developers
-              </p>
             </form>
           </>
         ) : (
