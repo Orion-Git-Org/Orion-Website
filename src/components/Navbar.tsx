@@ -16,12 +16,12 @@ export default function Navbar() {
   return (
     <nav className="w-full top-0 sticky z-50 bg-[#131313] shadow-none border-b border-[#353534]/15">
       <div className="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
-        <Link to="/" className="flex items-center gap-3 text-xl font-bold tracking-tighter text-[#E5E2E1]">
+        <Link to="/" className="flex items-center gap-2.5 text-xl font-bold tracking-tighter text-[#E5E2E1]">
           <img
             src={logoSrc}
             alt=""
             aria-hidden="true"
-            className="h-9 w-9 shrink-0 object-contain"
+            className="h-12 w-12 shrink-0 object-contain"
           />
           <span>Orion</span>
         </Link>
